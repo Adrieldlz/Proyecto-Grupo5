@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración - Spa Relax</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Panel de Administración - Spa Relax</h1>
+        <nav class="nav">
+            <a href="index.html">Volver al Inicio</a>
+            <a href="login_admin.html" class="logout">Cerrar Sesión</a>
+        </nav>
+    </header>
+
+    <main class="admin-content">
+        <div class="table-container">
+            <h2>Gestión de Citas</h2>
+            <table class="admin-table">
+                <thead>
+                    <tr>
+                        <th>DNI</th>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Servicio</th>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>12345678</td>
+                        <td>Jaaa pii</td>
+                        <td>jaa@email.com</td>
+                        <td>Masaje Relajante</td>
+                        <td>2025-09-08</td>
+                        <td>10:00</td>
+                        <td>Pendiente</td>
+                        <td>
+                            <button class="btn-edit">Editar</button>
+                            <button class="btn-delete">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>87654321</td>
+                        <td>Hasss Taggg</td>
+                        <td>hass@email.com</td>
+                        <td>Reflexología</td>
+                        <td>2025-09-08</td>
+                        <td>11:30</td>
+                        <td>Confirmada</td>
+                        <td>
+                            <button class="btn-edit">Editar</button>
+                            <button class="btn-delete">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Citas - Spa Relax</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Spa Relax</h1>
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="citas.html" class="active">Agendar Cita</a>
+            <div class="user-menu">
+                <span class="user-name">usuario@email.com</span>
+                <a href="login.html" class="logout-link">Cerrar Sesión</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="dashboard-container">
+        <!-- Panel de información del usuario -->
+        <aside class="user-info-panel">
+            <div class="user-profile">
+                <h3>Información del Cliente</h3>
+                <div class="profile-details">
+                    <p><strong>Nombre:</strong> <span>Usuario Demo</span></p>
+                    <p><strong>DNI:</strong> <span>12345678</span></p>
+                    <p><strong>Email:</strong> <span>usuario@email.com</span></p>
+                    <p><strong>Teléfono:</strong> <span>987654321</span></p>
+                </div>
+            </div>
+            <div class="upcoming-appointments">
+                <h3>Próximas Citas</h3>
+                <div class="appointment-list">
+                    <p class="no-appointments">No tienes citas programadas</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Formulario de reserva -->
+        <div class="form-container">
+            <h2>Reserva tu Cita</h2>
+            <form class="reservation-form">
+                <div class="form-group">
+                    <label for="servicio">Tipo de Masaje*</label>
+                    <select id="servicio" required>
+                        <option value="">Selecciona un servicio</option>
+                        <option value="relajante">Masaje Relajante - S/. 120.00</option>
+                        <option value="terapeutico">Masaje Terapéutico - S/. 150.00</option>
+                        <option value="deportivo">Masaje Deportivo - S/. 180.00</option>
+                        <option value="reflexologia">Reflexología - S/. 100.00</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="fecha">Fecha de la Cita*</label>
+                    <input type="date" id="fecha" min="" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="hora">Hora de la Cita*</label>
+                    <input type="time" id="hora" min="09:00" max="18:00" required>
+                </div>
+
+                <div class="form-summary">
+                    <h4>Resumen de la Reserva</h4>
+                    <p>El horario seleccionado estará reservado por 15 minutos para completar la reserva.</p>
+                </div>
+
+                <button type="submit" class="btn-submit">Confirmar Reserva</button>
+        </form>
+    </div>
+</body>
+</html>
