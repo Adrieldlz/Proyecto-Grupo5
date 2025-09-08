@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil - Spa Relax</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Spa Relax</h1>
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="citas.html">Agendar Cita</a>
+            <a href="historial.html">Mi Historial</a>
+            <div class="user-menu">
+                <span class="user-name">usuario@email.com</span>
+                <a href="perfil.html" class="active">Mi Perfil</a>
+                <a href="login.html" class="logout-link">Cerrar Sesión</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="dashboard-container">
+        <aside class="user-info-panel">
+            <div class="user-profile">
+                <h3>Información Actual</h3>
+                <div class="profile-details">
+                    <p><strong>Nombre:</strong> <span>Usuario Demo</span></p>
+                    <p><strong>DNI:</strong> <span>12345678</span></p>
+                    <p><strong>Email:</strong> <span>usuario@email.com</span></p>
+                    <p><strong>Teléfono:</strong> <span>987654321</span></p>
+                    <p><strong>Miembro desde:</strong> <span>Enero 2025</span></p>
+                </div>
+            </div>
+        </aside>
+
+        <div class="form-container">
+            <h2>Editar Mi Perfil</h2>
+            <form class="profile-form" onsubmit="return updateProfile(event)">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo*</label>
+                    <input type="text" id="nombre" value="Usuario Demo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="dni">DNI*</label>
+                    <input type="text" id="dni" value="12345678" pattern="[0-9]{8}" maxlength="8" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo Electrónico*</label>
+                    <input type="email" id="email" value="usuario@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono*</label>
+                    <input type="tel" id="telefono" value="987654321" pattern="[0-9]{9}" maxlength="9" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password-actual">Contraseña Actual</label>
+                    <input type="password" id="password-actual" placeholder="Ingresa tu contraseña actual">
+                </div>
+
+                <div class="form-group">
+                    <label for="nueva-password">Nueva Contraseña</label>
+                    <input type="password" id="nueva-password" placeholder="Nueva contraseña (opcional)">
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmar-password">Confirmar Nueva Contraseña</label>
+                    <input type="password" id="confirmar-password" placeholder="Confirma la nueva contraseña">
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-submit">Guardar Cambios</button>
+                    <button type="button" class="btn-cancel" onclick="window.location.href='citas.html'">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página No Encontrada - Spa Relax</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Spa Relax</h1>
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="login.html">Iniciar Sesión</a>
+        </nav>
+    </header>
+
+    <div class="error-container">
+        <div class="error-content">
+            <div class="error-number">404</div>
+            <h1>Página No Encontrada</h1>
+            <p class="error-message">Lo sentimos, la página que buscas no existe o ha sido movida.</p>
+            
+            <div class="error-suggestions">
+                <h3>¿Qué puedes hacer?</h3>
+                <ul>
+                    <li>Verificar la URL en la barra de direcciones</li>
+                    <li>Regresar a la página anterior</li>
+                    <li>Ir a nuestra página de inicio</li>
+                    <li>Contactarnos si necesitas ayuda</li>
+                </ul>
+            </div>
+
+            <div class="error-actions">
+                <a href="index.html" class="btn-primary">Ir al Inicio</a>
+                <a href="javascript:history.back()" class="btn-secondary">Página Anterior</a>
+                <a href="contacto.html" class="btn-tertiary">Contactarnos</a>
+            </div>
+
+            <div class="popular-links">
+                <h3>Enlaces Populares</h3>
+                <div class="links-grid">
+                    <a href="index.html" class="link-item">
+                        <h4>🏠 Inicio</h4>
+                        <p>Conoce nuestros servicios</p>
+                    </a>
+                    <a href="login.html" class="link-item">
+                        <h4>📅 Reservar Cita</h4>
+                        <p>Agenda tu masaje</p>
+                    </a>
+                    <a href="contacto.html" class="link-item">
+                        <h4>📞 Contacto</h4>
+                        <p>Habla con nosotros</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Auto-redirect después de 10 segundos
+        setTimeout(function() {
+            if (confirm('¿Quieres ser redirigido a la página de inicio?')) {
+                window.location.href = 'index.html';
+            }
+        }, 10000);
+    </script>
+</body>
+</html>

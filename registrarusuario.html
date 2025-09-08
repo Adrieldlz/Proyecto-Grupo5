@@ -9,7 +9,7 @@
 <body>
     <div class="login-container">
         <h2>Crear Cuenta en Spa Relax</h2>
-        <form class="registration-form">
+    <form class="registration-form" onsubmit="return validateRegister(event)">
             <div class="form-group">
                 <label for="dni">DNI*</label>
                 <input type="text" id="dni" pattern="[0-9]{8}" maxlength="8" placeholder="Ingresa tu DNI" required>
@@ -44,7 +44,8 @@
             </div>
 
             <button type="submit" class="btn-submit">Crear Cuenta</button>
-        </form>
+    </form>
+    <script src="script.js"></script>
         <div class="extra-links">
             <p>¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
         </div>

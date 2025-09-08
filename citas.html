@@ -12,8 +12,10 @@
         <nav class="nav">
             <a href="index.html">Inicio</a>
             <a href="citas.html" class="active">Agendar Cita</a>
+            <a href="historial.html">Mi Historial</a>
             <div class="user-menu">
                 <span class="user-name">usuario@email.com</span>
+                <a href="perfil.html">Mi Perfil</a>
                 <a href="login.html" class="logout-link">Cerrar Sesión</a>
             </div>
         </nav>
@@ -69,7 +71,7 @@
                     <p>El horario seleccionado estará reservado por 15 minutos para completar la reserva.</p>
                 </div>
 
-                <button type="submit" class="btn-submit">Confirmar Reserva</button>
+                <button type="submit" class="btn-submit" onclick="confirmReservation()">Confirmar Reserva</button>
         </form>
     </div>
 </body>

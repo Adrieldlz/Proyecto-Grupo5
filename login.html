@@ -31,27 +31,7 @@
       <button type="submit" class="btn-login">Iniciar Sesión</button>
     </form>
     
-    <script>
-      function validateLogin(event) {
-        event.preventDefault();
-        
-        const email = document.getElementById('email').value;
-        const password = document.getElementById('password').value;
-        const errorMessage = document.getElementById('loginError');
-        
-        // Validar las credenciales
-        if (email === 'usuario@email.com' && password === 'usuario') {
-          // Credenciales correctas, redirigir a citas.html
-          window.location.href = 'citas.html';
-        } else {
-          // Credenciales incorrectas, mostrar error
-          errorMessage.style.display = 'block';
-          errorMessage.textContent = 'Correo electrónico o contraseña incorrectos';
-        }
-        
-        return false;
-      }
-    </script>
+  <script src="script.js"></script>
     <div class="extra-links">
       <p>¿No tienes cuenta? <a href="registrarusuario.html">Regístrate</a></p>
       <p><a href="#">¿Olvidaste tu contraseña?</a></p>
